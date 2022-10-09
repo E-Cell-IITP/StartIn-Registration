@@ -1,0 +1,18 @@
+/* .carousel{
+    height:50vh !important;
+} */
+img{
+    width: 70vw !important;
+    height:auto;
+    text-align: center;
+}
+.carousel-inner{
+    /* height:50vh !important; */
+}
+.carousel {
+    position: relative;
+    width: 68vw !important;
+    text-align: center !important;
+    transform: translate(-50%);
+    left: 50%;
+}
