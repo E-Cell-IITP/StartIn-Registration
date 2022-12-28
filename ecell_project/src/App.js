@@ -1,12 +1,16 @@
-// import logo from './logo.svg';
-import './App.css';
+
 import React from 'react';
 import Carousal from './components/carousel';
 
+import './App.css';
+import Dashboard1 from './components1/Dashboard1';
+
 function App() {
   return (
-    <div >
-      <Carousal/>
+    <div className='appki'>
+    <Carousal/>
+    <Dashboard1/>
+
     </div>
   );
 }
