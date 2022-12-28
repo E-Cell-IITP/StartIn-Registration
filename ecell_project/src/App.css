@@ -1,7 +1,13 @@
 .App {
   text-align: center;
 }
-
+*{
+  text-decoration: none;
+  /* background-color: darkblue; */
+}
+/* .appki{
+  background-color: darkblue;
+} */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
