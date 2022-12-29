@@ -12,7 +12,6 @@ import Dashboard1 from './Dashboard1';
 
 const Todayprofit = ({rows,createData,setRows}) => {
     
-
     const [personname,setPersonname]=useState("");
     const [profitamount,setProfitamount]=useState("");
     const [date,setDate]=useState("");

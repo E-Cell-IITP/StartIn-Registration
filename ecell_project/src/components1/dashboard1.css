@@ -1,11 +1,13 @@
 *{
     margin: 0px;
+    margin-right: 0px;
+    padding-right: 0;
 }
 .topp{
     background-color: darkblue;
     margin: 0;
     /* margin-bottom: 30px; */
-    height: 200vh;
+    /* height: 200vh; */
 }
 
 .topheading{
@@ -52,22 +54,40 @@
 }
 
 .pic{
-    height: 150px;
+    height: auto;
     width: 100%;
     /* background-color: red; */
     display: flex;
-    /* flex-direction: row; */
+    flex-direction: row;
+    align-items: center;
+    /* text-align: center; */
     justify-content: space-around;
-
 }
 .p1{
-    /* background-color: white; */
-    width: 20%;
-    height: inherit;
+    background-color: white;
+    width: 26%;
+    /* height: inherit; */
 }
 .p1 img{
-    height: inherit;
+    height: auto;
+    width: 100%;
+    
+    /* height: inherit; */
 }
+@media only screen and (max-width: 1000px) {
+    .pic {
+        display: flex;
+        flex-direction: column;
+    }
+    .p1{
+        margin-bottom: 10px;
+        width: 60%;
+    }
+    .p1 img{
+        width: 100%;
+    }
+  }
+
 .todayprofit{
     width: 100%;
     height: auto;
@@ -77,6 +97,7 @@
     
     align-items: center;
     display: flex;
+    flex-direction: column;
 }
 .today{
     background-color: orange;

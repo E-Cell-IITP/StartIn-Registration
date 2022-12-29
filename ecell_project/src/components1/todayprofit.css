@@ -1,3 +1,8 @@
+*{
+    margin-right: 0;
+    padding-right: 0;
+}
+
 .todaycont{
     width: 60%;
     height: auto;
@@ -22,25 +27,36 @@
 .namee{
     font-weight: bold;
     font-size: 20px;
-    padding: 5px;
+    padding: 5px ;
 }
 .namebox{
-    padding: 5px 10px;
+    padding: 5px 2px;
 }
 .comm{
-    margin: 5px;
+    margin: 2px ;
     /* justify-content: ; */
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
+    padding: 2px 0px;
    display: flex;
     /* background-color: orange; */
     
 }
 .boxx{
     /* text-align: right; */
+    width: 30%;
     align-items: right;
 }
+@media only screen and (max-width: 1000px) {
+    .todaycont{
+        width: 80%;
+    }
+    .boxx{
+        /* text-align: right; */
+        width: 40%;
+        align-items: right;
+    }
+  }
 .submitting{
     align-items: center;
     text-align: center;

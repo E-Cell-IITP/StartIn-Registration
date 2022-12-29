@@ -3,7 +3,9 @@
     /* width: 100px; */
     width: 90% !important;
     margin-top: 10px;
-    overflow: hidden !important;
+    margin-bottom: 30px;
+    /* overflow:auto; */
+    overflow-y: hidden;
     border-radius: 0 !important;
 }
 .headtable{

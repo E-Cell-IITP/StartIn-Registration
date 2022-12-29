@@ -35,7 +35,7 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 
 
 const Datatable = ({rows}) => {
-  console.log(rows);
+  // console.log(rows);
   let ct=1;
   return (
     <div className='headtable'>
@@ -53,6 +53,7 @@ const Datatable = ({rows}) => {
         </TableHead>
         <TableBody>
           {rows.map((row) => (
+
             <StyledTableRow key={row.sno}>
               <StyledTableCell component="th" scope="row">
                 {ct++}
@@ -62,6 +63,7 @@ const Datatable = ({rows}) => {
               <StyledTableCell align="right">{row.timeofentry}</StyledTableCell>
               <StyledTableCell align="right">{row.name}</StyledTableCell>
             </StyledTableRow>
+
           ))}
         </TableBody>
       </Table>
