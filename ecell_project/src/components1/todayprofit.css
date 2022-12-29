@@ -1,0 +1,75 @@
+*{
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.todaycont{
+    width: 60%;
+    height: auto;
+    background-color: rgb(126, 230, 126) !important;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 5px;
+}
+.uskaname{
+    background-color: rgb(198, 8, 8);
+}
+.uskaamount{
+    background-color: yellow;
+}
+.uskaDate{
+    background-color: rgb(226, 12, 230);
+}
+.uskaRemarks{
+    background-color: palevioletred;
+}
+.namee{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px ;
+}
+.namebox{
+    padding: 5px 2px;
+}
+.comm{
+    margin: 2px ;
+    /* justify-content: ; */
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 0px;
+   display: flex;
+    /* background-color: orange; */
+    
+}
+.boxx{
+    /* text-align: right; */
+    width: 30%;
+    align-items: right;
+}
+@media only screen and (max-width: 1000px) {
+    .todaycont{
+        width: 80%;
+    }
+    .boxx{
+        /* text-align: right; */
+        width: 40%;
+        align-items: right;
+    }
+  }
+.submitting{
+    align-items: center;
+    text-align: center;
+}
+.submitnow{
+    padding: 8px 10px;
+    background-color: rgb(7, 190, 7);
+    border: none;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.submitnow:hover{
+    scale: 1.02;
+}
