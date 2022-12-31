@@ -7,7 +7,11 @@ import {
   Link
 } from 'react-router-dom';
 import './dashboard1.css'
-import profit1 from '../images/profit1.jpeg'; // with import
+// import profit1 from '../images/profit1.jpeg';
+import rectimg from '../images/Rectangle\ 57.jpg'
+import elipimg1 from '../images/Ellipse\ 5.jpg'
+import elipimg2 from '../images/Ellipse\ 6.jpg'
+import elipimg3 from '../images/Ellipse\ 7.jpg'
 import Datatable from './Datatable';
 import Todayprofit from './Todayprofit';
 
@@ -40,22 +44,25 @@ const Dashboard1 = () => {
       </div>
       <div className="pic">
         <div className="p1">
-            <img src={profit1} alt="opsf" />
+            <img src={elipimg1} alt="opsf" />
         </div>
         <div className="p1">
-            <img src={profit1} alt="opsf" />
+            <img src={elipimg2} alt="opsf" />
         </div>
         <div className="p1">
-            <img src={profit1} alt="opsf" />
+            <img src={elipimg3} alt="opsf" />
         </div>
       </div>
       <Router>
       <div className="todayprofit">
       <Link to="/todayprofit">
-        <span className="today">Enter Today's Profit</span>
+      {/* <a href={aesehi}> */}
+      <span className="today">Enter Today's Profit</span>
+      {/* </a> */}
+        
       </Link>
       <Routes>
-        <Route exact path='/todayprofit' element={<Todayprofit rows={rows} createData={createData} setRows={setRows}/>}></Route>
+      <Route exact path='/todayprofit' element={<Todayprofit rows={rows} createData={createData} setRows={setRows}/>}></Route>
       </Routes>
       </div>
       </Router>

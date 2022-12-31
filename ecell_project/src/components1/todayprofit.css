@@ -4,16 +4,16 @@
 }
 
 .todaycont{
-    width: 60%;
+    width: 70%;
     height: auto;
     background-color: rgb(126, 230, 126) !important;
     display: flex;
     flex-direction: column;
-    margin: 10px;
-    padding: 5px;
+    margin: 15px 5px;
+    padding: 10px 5px;
 }
 .uskaname{
-    background-color: rgb(198, 8, 8);
+    background-color: rgb(228, 16, 16);
 }
 .uskaamount{
     background-color: yellow;
@@ -28,31 +28,29 @@
     font-weight: bold;
     font-size: 20px;
     padding: 5px ;
+    margin: 10px;
 }
 .namebox{
     padding: 5px 2px;
-}
-.comm{
-    margin: 2px ;
-    /* justify-content: ; */
-    align-items: center;
-    justify-content: space-between;
-    padding: 2px 0px;
-   display: flex;
-    /* background-color: orange; */
     
 }
+.comm{
+    margin: 3px ;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px ;
+   display: flex;
+}
 .boxx{
-    /* text-align: right; */
-    width: 30%;
-    align-items: right;
+    width: 40%;
+    margin: 2px;
+    /* align-items: right; */
 }
 @media only screen and (max-width: 1000px) {
     .todaycont{
         width: 80%;
     }
     .boxx{
-        /* text-align: right; */
         width: 40%;
         align-items: right;
     }
@@ -66,6 +64,7 @@
     background-color: rgb(7, 190, 7);
     border: none;
     font-weight: bold;
+    margin-top: 10px;
     font-size: 17px;
     cursor: pointer;
     border-radius: 4px;
