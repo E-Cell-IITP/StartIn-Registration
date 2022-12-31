@@ -5,6 +5,9 @@ import Services1 from './components-2/Services1';
 import Others1 from './components-2/Others1';
 import Dashboard1 from './components1/Dashboard1';
 import Todayprofit from './components1/Todayprofit';
+import Navlog_sign_in from './components3/Navlog_sign_in';
+import Login1 from './components3/Login1';
+import SignUp1 from './components3/SignUp1';
 
 
 
@@ -21,7 +24,7 @@ function useAuth() {
 export default function Router() {
     return useRoutes([
       {path:'/',
-      element:<Division3/>
+      element:<Navlog_sign_in/>
     },
     {
       path:'/food1',
@@ -43,6 +46,14 @@ export default function Router() {
       path:'/dashboard/today',
       element:<Todayprofit/>
     },
+    {
+      path:'/login',
+      element:<Login1/>
+    },
+    {
+      path:'/sign',
+      element:<SignUp1/>
+    }
 
       // {
       //   path: '/',
