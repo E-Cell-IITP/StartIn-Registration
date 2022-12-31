@@ -1,4 +1,4 @@
-import { Routes } from 'react-router-dom';
+import { Routes,BrowserRouter } from 'react-router-dom';
 import './App.css';
 import Division3 from './components-2/Division3';
 import Food1 from './components-2/Food1';
@@ -11,12 +11,11 @@ import Router from './routes';
 
 function App() {
   return (
-    <div className='appki'>
-    
-    <Router/>
-    
-    
-     </div>
+    // <div className='appki'>
+      <>
+      <Router />
+      </>
+    //  {/* </div> */}
   );
 }
 

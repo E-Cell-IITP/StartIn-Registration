@@ -32,7 +32,12 @@ const Dashboard1 = () => {
   useEffect(()=>{
     localStorage.setItem('rows',JSON.stringify(rows));
   },[rows])
-  
+  const callingtodayprofit=(e)=>{
+    // e.preventDefault();
+    // <Todayprofit rows={rows} createData={createData} setRows={setRows}/>
+    window.location='dashboard/today'
+  }
+
   return (
     <div className='topp'>
         <div className="userlead">
@@ -53,19 +58,9 @@ const Dashboard1 = () => {
             <img src={elipimg3} alt="opsf" />
         </div>
       </div>
-      <Router>
       <div className="todayprofit">
-      <Link to="/todayprofit">
-      {/* <a href={aesehi}> */}
-      <span className="today">Enter Today's Profit</span>
-      {/* </a> */}
-        
-      </Link>
-      <Routes>
-      <Route exact path='/todayprofit' element={<Todayprofit rows={rows} createData={createData} setRows={setRows}/>}></Route>
-      </Routes>
+      <span className="today" onClick={callingtodayprofit}>Enter Today's Profit</span>
       </div>
-      </Router>
 
      <div className="lastfive">
         <span className="last">Last Five Entries</span>

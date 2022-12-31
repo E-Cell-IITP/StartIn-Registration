@@ -8,6 +8,7 @@ import {
 import './todayprofit.css'
 import Datatable from './Datatable';
 import Dashboard1 from './Dashboard1';
+import HeadDashboard1 from './HeadDashboard1';
 
 
 const Todayprofit = ({rows,createData,setRows}) => {
@@ -25,17 +26,17 @@ const Todayprofit = ({rows,createData,setRows}) => {
       
     const changhandle=(e)=>{
         e.preventDefault();
-        setRows([createData(rows.length+1,profitamount,date,datetime,personname),...rows]);
-        setPersonname('');
-        setDate('');
-        setProfitamount('');
-        setRemarks('');
+        // setRows([createData(rows.length+1,profitamount,date,datetime,personname),...rows]);
+        // setPersonname('');
+        // setDate('');
+        // setProfitamount('');
+        // setRemarks('');
+        window.location='/dashboard'
     }
   return (
     <>
-
-    
-  
+    <HeadDashboard1/>
+    <div className='formtodayprofit'>
     <form onSubmit={changhandle}   className='todaycont'>
 
    
@@ -55,7 +56,7 @@ const Todayprofit = ({rows,createData,setRows}) => {
       </div>
       <div className="uskaRemarks comm">
       <label className='namee' for="w3review">Remarks</label>
-<textarea value={remarks} onChange={(e)=>{setRemarks(e.target.value)}} className='boxx' id="w3review" name="w3review" rows="7" cols="70" placeholder='Optional'>
+<textarea value={remarks} onChange={(e)=>{setRemarks(e.target.value)}} className='boxx namebox' id="w3review" name="w3review" rows="7" cols="70" placeholder='Optional'>
 
  </textarea>
       </div>
@@ -64,6 +65,7 @@ const Todayprofit = ({rows,createData,setRows}) => {
       </div>
     </form>
       
+    </div>
     </>
   )
 }

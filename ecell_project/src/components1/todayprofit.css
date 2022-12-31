@@ -2,14 +2,21 @@
     margin-right: 0;
     padding-right: 0;
 }
+.formtodayprofit{
+    text-align: center;
+    display: flex;
+    /* background-color: red; */
+    justify-content: center;
+    align-items: center;
 
+}
 .todaycont{
-    width: 70%;
+    width: 80%;
     height: auto;
-    background-color: rgb(126, 230, 126) !important;
+    /* background-color: rgb(126, 230, 126) !important; */
     display: flex;
     flex-direction: column;
-    margin: 15px 5px;
+    margin: 40px 5px;
     padding: 10px 5px;
 }
 .uskaname{
@@ -31,21 +38,21 @@
     margin: 10px;
 }
 .namebox{
-    padding: 5px 2px;
-    
+    padding: 5px 3px;
+    margin: 10px ;
 }
 .comm{
-    margin: 3px ;
+    margin: 4px  ;
     align-items: center;
     justify-content: space-between;
-    padding: 2px ;
+    /* padding: 1px ; */
    display: flex;
 }
-.boxx{
+/* .boxx{
     width: 40%;
-    margin: 2px;
-    /* align-items: right; */
-}
+    margin: 6px 2px;
+    align-items: right;
+} */
 @media only screen and (max-width: 1000px) {
     .todaycont{
         width: 80%;

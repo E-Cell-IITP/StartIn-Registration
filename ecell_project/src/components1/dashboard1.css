@@ -92,23 +92,22 @@
 .todayprofit{
     width: 100%;
     height: auto;
-    /* background-color: yellow; */
     margin-top: 30px;
     margin-bottom: 40px;
     
-    align-items: center;
+    text-align: left;
     display: flex;
     flex-direction: column;
 }
 .today{
+    width: fit-content;
     background-color: rgb(255, 123, 0);
     padding: 3px 10px ;
     font-size: 16px;
     font-weight: bold;
-    border-radius: 10px 10px 3px 3px;
     border: 3px solid ;
     margin-left: 60px;
-    margin-right: 30px;
+    /* margin-right: 30px; */
     cursor: pointer;
     border-color: red;
 }

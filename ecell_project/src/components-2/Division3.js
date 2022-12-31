@@ -15,6 +15,12 @@ import {
     Route,
     Link
   } from 'react-router-dom';
+  function food1(e){
+    e.preventDefault();
+    window.location='food1';
+  };
+   
+
  
 const Division3 = () => {
   // render(){
@@ -22,24 +28,20 @@ const Division3 = () => {
       <>
         <Tophead1/>
       <div className="threebox">
-      {/* <Link className='linkk' to="/food1"> */}
-      <div onClick={()=>{window.location='food1'}} className="box1 boxo">
+      <div onClick={(e) => {food1(e)}}className="box1 boxo">
+      
           <img src={foodimg} alt="" />
           <div className="textt">Food</div>
       </div>
-      {/* </Link> */}
-      {/* <Link className='linkk' to="/services1"> */}
+      
       <div onClick={()=>{window.location='services1'}} className="box2 boxo">
         <img src={serviceimg} alt="" />
         <div className="textt">Services</div>
       </div>
-      {/* </Link> */}
-      {/* <Link className='linkk' to="/others1"> */}
       <div onClick={()=>{window.location='others1'}} className="box3 boxo">
         <img src={otherimg} alt="" />
         <div className="textt">Others</div>
       </div>
-      {/* </Link> */}
       </div>
     </>
   );

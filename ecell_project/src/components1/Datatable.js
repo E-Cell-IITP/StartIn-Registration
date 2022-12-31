@@ -44,24 +44,24 @@ const Datatable = ({rows}) => {
       <Table sx={{ minWidth: 700 }} aria-label="customized table">
         <TableHead>
           <TableRow>
-            <StyledTableCell>S.NO</StyledTableCell>
-            <StyledTableCell align="right">Amount</StyledTableCell>
-            <StyledTableCell align="right">Date</StyledTableCell>
-            <StyledTableCell align="right">Time of Entry</StyledTableCell>
-            <StyledTableCell align='right'>Entered By</StyledTableCell>
+            <StyledTableCell align='center'>S.NO</StyledTableCell>
+            <StyledTableCell align="center">Amount</StyledTableCell>
+            <StyledTableCell align="center">Date</StyledTableCell>
+            <StyledTableCell align="center">Time of Entry</StyledTableCell>
+            <StyledTableCell align='center'>Entered By</StyledTableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {rows.map((row) => (
 
             <StyledTableRow key={row.sno}>
-              <StyledTableCell component="th" scope="row">
+              <StyledTableCell align='center' component="th" scope="row">
                 {ct++}
-              </StyledTableCell>
-              <StyledTableCell align="right">{row.amount}</StyledTableCell>
-              <StyledTableCell align="right">{row.date}</StyledTableCell>
-              <StyledTableCell align="right">{row.timeofentry}</StyledTableCell>
-              <StyledTableCell align="right">{row.name}</StyledTableCell>
+              </StyledTableCell >
+              <StyledTableCell align="center">{row.amount}</StyledTableCell>
+              <StyledTableCell align="center">{row.date}</StyledTableCell>
+              <StyledTableCell align="center">{row.timeofentry}</StyledTableCell>
+              <StyledTableCell align="center">{row.name}</StyledTableCell>
             </StyledTableRow>
 
           ))}

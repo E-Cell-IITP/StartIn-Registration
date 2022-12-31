@@ -11,9 +11,8 @@
 .boxo{
     align-items: center;
     text-align: center;
-    width: 100%;
-    /* width: 23%;
-    text-align: center; */
+    width: 23%;
+    text-align: center;
     cursor: pointer;
     position: relative;
 }
