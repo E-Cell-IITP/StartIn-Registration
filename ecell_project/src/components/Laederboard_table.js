@@ -29,14 +29,9 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
   },
 }));
 
-
-
-
-
-
-const Datatable = ({rows}) => {
-  console.log(rows);
-  let ct=1;
+const Laederboard_table = ({rows}) => {
+    console.log(rows);
+    let ct=1;
   return (
     <div className='headtable'>
 
@@ -44,23 +39,23 @@ const Datatable = ({rows}) => {
       <Table sx={{ minWidth: 700 }} aria-label="customized table">
         <TableHead>
           <TableRow>
-            <StyledTableCell>S.NO</StyledTableCell>
-            <StyledTableCell align="right">Amount</StyledTableCell>
-            <StyledTableCell align="right">Date</StyledTableCell>
-            <StyledTableCell align="right">Time of Entry</StyledTableCell>
-            <StyledTableCell align='right'>Entered By</StyledTableCell>
+            <StyledTableCell align='center' className='cell1'>Rank</StyledTableCell>
+            <StyledTableCell align="center" className='cell'>Team Name</StyledTableCell>
+            <StyledTableCell align="center" className='cell'>Category</StyledTableCell>
+            <StyledTableCell align="center" className='cell'>Total Profit</StyledTableCell>
+            {/* <StyledTableCell align='right'>Entered By</StyledTableCell> */}
           </TableRow>
         </TableHead>
         <TableBody>
           {rows.map((row) => (
-            <StyledTableRow key={row.sno}>
-              <StyledTableCell component="th" scope="row">
+            <StyledTableRow key={row.id}>
+              <StyledTableCell component="th" scope="row" align='center' className='cell1'>
                 {ct++}
-              </StyledTableCell>
-              <StyledTableCell align="right">{row.amount}</StyledTableCell>
-              <StyledTableCell align="right">{row.date}</StyledTableCell>
-              <StyledTableCell align="right">{row.timeofentry}</StyledTableCell>
-              <StyledTableCell align="right">{row.name}</StyledTableCell>
+              </StyledTableCell >
+              <StyledTableCell align="center" className='cell'>{row.TeamName}</StyledTableCell>
+              <StyledTableCell align="center" className='cell'>{row.Category}</StyledTableCell>
+              <StyledTableCell align="center" className='cell'>{row.TotalProfit}</StyledTableCell>
+              {/* <StyledTableCell align="right">{row.name}</StyledTableCell> */}
             </StyledTableRow>
           ))}
         </TableBody>
@@ -70,5 +65,4 @@ const Datatable = ({rows}) => {
   )
 }
 
-
-export default Datatable
+export default Laederboard_table

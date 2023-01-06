@@ -1,16 +1,15 @@
 
-import React from 'react';
-import Carousal from './components/carousel';
-
+// import logo from './logo.svg';
 import './App.css';
-import Dashboard1 from './components1/Dashboard1';
+import React from 'react';
+// import Carousal from './components/carousel';
+import Leaderboard from './components/Leaderboard.js';
 
 function App() {
   return (
-    <div className='appki'>
-    <Carousal/>
-    <Dashboard1/>
-
+    <div >
+      {/* <Carousal/> */}
+      <Leaderboard/>
     </div>
   );
 }
