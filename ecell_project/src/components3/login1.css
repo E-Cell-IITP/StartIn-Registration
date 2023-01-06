@@ -1,4 +1,4 @@
-.loginhead{
+ ._loginhead{
     width: 100%;
     padding: 10px;
     /* background-color:white; */
@@ -6,82 +6,89 @@
     flex-direction: column;
     align-items: center;
 }
-.loginbox{
+._loginbox{
     margin-top: 20px;
     width: 60%;
+    min-width: 300px;
     font-size: 30px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color:azure;
+    background-color:rgb(2, 1, 18);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 0 0 20px 0px;
+    padding: 0 0 40px 0px;
 }
-.headinglogin{
-    width: 90%;
-    text-align: center;
-    padding:20px 10px;
-    background-color:rgb(173, 166, 166);
-}
-.emailbox{
-    text-align: left ;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    padding:20px 10px;
-}
-.emailbox label{
-    padding-left: 15px;
-    padding-bottom: 5px;
-}
-.emailbox input{
-    padding: 10px;
-    margin-left: 15px;
-}
-.passwordbox{
-    text-align: left ;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    padding:20px 10px;
-}
-.passwordbox label{
-    padding-left: 15px;
-    padding-bottom: 5px;
-}
-.passwordbox input{
-    padding: 10px;
-    margin-left: 15px;
-}
-.checkbox1{
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    align-items: center;
-    text-align: left;
-     padding:20px 10px;
-}
-.checkbox1-input{
-    margin: 10px;
-}
-.checkbox1 label{
-    font-size: 20px;
-}
-.submitbutton{
-    background-color:rgba(0, 128, 0, 0.826);
-    padding: 5px 10px ;
+._headinglogin{
     width: 80%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    /* color: black; */
+    padding:20px 10px;
+    background-color:rgba(34, 21, 218, 0.256);
+}
+._emailbox{
+    text-align: left ;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding:20px 10px;
+}
+._emailbox label{
+    padding-left: 15px;
+   
+    padding-bottom: 5px;
+}
+._emailbox input{
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+._passwordbox{
+    text-align: left ;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding:20px 10px;
+}
+._passwordbox label{
+    padding-left: 15px;
+    padding-bottom: 5px;
+    
+}
+._passwordbox input{
+    padding: 10px;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+
+._submitbutton{
+    background-color:rgba(6, 97, 234, 0.826);
+    padding: 10px 10px ;
+    width: 80%;
+    margin-bottom: 0px;
     text-align: center;
     cursor: pointer;
     border-radius: 20px;
 }
-.submitbutton:hover{
+._submitbutton:hover{
     scale: 1.04;
 }
-.forgot-password{
-    padding: 10px;
+._Donthave{
+    background-color:rgba(102, 109, 244, 0.826);
+    padding: 5px 10px ;
+    width: 80%;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 20px;
+}
+._Donthave:hover{
+    scale: 1.04;
+}
+._forgot-password{
+    padding: 3px 10px;
     font-size: 20px;
     text-align: right;
     width: 80%;

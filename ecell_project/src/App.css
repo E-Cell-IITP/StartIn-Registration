@@ -8,9 +8,9 @@ body{
   background-image: url("./images/ecellbackground1.jpeg");
     background-attachment: fixed;
     
-    background-size: 100% 150%;
+    background-size: 100%;
     padding: 10px 50px 50px;
-    background-repeat: no-repeat;
+    background-repeat:repeat-y;
     /* background-color: #143E86; */
 
 }

@@ -7,7 +7,7 @@ import Dashboard1 from './components1/Dashboard1';
 import Todayprofit from './components1/Todayprofit';
 import Navlog_sign_in from './components3/Navlog_sign_in';
 import Login1 from './components3/Login1';
-import SignUp1 from './components3/SignUp1';
+import Personal_Register from './components3/Personal_Register';
 
 
 
@@ -51,31 +51,14 @@ export default function Router() {
       element:<Login1/>
     },
     {
-      path:'/sign',
-      element:<SignUp1/>
+      path:'/personal_register',
+      element:< Personal_Register/>
+    },
+    {
+      path:'/Navlogin_register',
+      element:<Navlog_sign_in/>
     }
 
-      // {
-      //   path: '/',
-      //   element: <Division3/>,
-      //   children: [
-      //     // {path:'/',element:<Division3/>},
-      //       {path:'food1',element:<Food1/>},
-      //       {path:'services1',element:<Services1/>},
-      //       {path:'others1',element:<Others1/>}
-      //   ]
-      // },
-      // {
-      //   path: '/dashboard',
-      //   element: <Dashboard1 />,
-      //   children: [
-      //     { path: '/', element: <Navigate to="/dashboard/app" replace /> },
-      //   //   { path: 'app', element: <PrivateRoute><DashboardApp /></PrivateRoute> },
-      //   //   { path: 'user*', element: <PrivateRoute><User /></PrivateRoute>},
-      //   ]
-      // },
-  
-      // { path: '*', element: <Navigate to="/404" replace /> }
     ]);
     
   }

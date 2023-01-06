@@ -57,6 +57,7 @@ const Dashboard1 = () => {
         <div className="p1">
             <img src={elipimg3} alt="opsf" />
         </div>
+      
       </div>
       <div className="todayprofit">
       <span className="today" onClick={callingtodayprofit}>Enter Today's Profit</span>

@@ -11,7 +11,7 @@ const Navlog_sign_in = () => {
       </div>
       <div className="log_sign">
          <span onClick={()=>{window.location='/login'}}  className="login">Login</span>
-         <span onClick={()=>{window.location='/sign'}} className="sign">Sign-Up</span>
+         <span onClick={()=>{window.location='personal_register'}} className="sign">Register</span>
       </div>
     </div>
   )
